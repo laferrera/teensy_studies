@@ -89,8 +89,8 @@ void setup() {
 
 void setupMenu() {
   // Add menu items to menu page
+  menuPageMain.addMenuItem(menuItemSelect);  
   menuPageMain.addMenuItem(menuItemInt);
-  menuPageMain.addMenuItem(menuItemSelect);
   menuPageMain.addMenuItem(menuItemBool);
   menuPageMain.addMenuItem(menuItemButton);
 
@@ -131,8 +131,6 @@ void loop() {
       display.display();
     }
     
-  
-
     if (buttonOkay.pressed()) {
       menu.registerKeyPress(GEM_KEY_OK);
       Serial.println("okay");      
